@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tourism.AddClientForm">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAQCAEAAAAAACKQARCBAAAAAAAAAABAAAAgAA=</HashCode>
+      <FileName>AddClientForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.AddOrderForm">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAQCBAAQBIAGCAAAACAQAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>AddOrderForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.AddTourForm">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAQCAAAAAAAACAAFACAAAAAAAAAAABEAAAAAA=</HashCode>
+      <FileName>AddTourForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.Client">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAgAACAAAIAEAAAAQAQABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.ClientsForm">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACBBIAAAACgAABAAAACAAAACAAgIAAAABAADAIgAIAA=</HashCode>
+      <FileName>ClientsForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.Form1">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAQAAACAAIAAAAAGAAAACAEBAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.MyDbContext">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>MyDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.Order">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAAAAAgAAAAAAAAAAAAAABAAAEAAAAAQQ=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.OrdersForm">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAQADAIAACAAACAAAACAAgAAAgCAECABAAAAAQ=</HashCode>
+      <FileName>OrdersForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.Tour">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAQAAAAAEAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tour.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tourism.ToursForm">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAACABAAAAAAGAAAACAAkAAEACAACABIAAAAA=</HashCode>
+      <FileName>ToursForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
