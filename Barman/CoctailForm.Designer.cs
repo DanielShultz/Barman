@@ -39,6 +39,7 @@
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ingridient = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.orderBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cocktailBindingSource)).BeginInit();
@@ -62,6 +63,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(444, 232);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // DeleteOrder
             // 
@@ -125,11 +127,20 @@
             this.timeDataGridViewTextBoxColumn.Name = "timeDataGridViewTextBoxColumn";
             this.timeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // Ingridient
+            // 
+            this.Ingridient.FormattingEnabled = true;
+            this.Ingridient.Location = new System.Drawing.Point(462, 12);
+            this.Ingridient.Name = "Ingridient";
+            this.Ingridient.Size = new System.Drawing.Size(181, 264);
+            this.Ingridient.TabIndex = 5;
+            // 
             // CoctailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(466, 281);
+            this.ClientSize = new System.Drawing.Size(656, 281);
+            this.Controls.Add(this.Ingridient);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.DeleteOrder);
@@ -160,5 +171,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn timeDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource cocktailBindingSource;
+        private System.Windows.Forms.ListBox Ingridient;
     }
 }

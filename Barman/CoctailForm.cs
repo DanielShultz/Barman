@@ -63,6 +63,13 @@ namespace Barman
                     Time = (int)acForm.Time.Value
                 };
 
+                ingredients.Clear();
+                foreach (var scar in acForm.Ingridient.SelectedItems)
+                {
+                    ingredients.Add((Ingredient)scar);
+                }
+                cocktail.Ingredient = ingredients;
+
                 context.Cocktail.Add(cocktail);
                 context.SaveChanges();
 
@@ -126,6 +133,25 @@ namespace Barman
                     context.Cocktail.Load();
                     context.Ingredient.Load();
                     dataGridView1.DataSource = context.Cocktail.Local.ToBindingList();
+                }
+            }
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int index = dataGridView1.SelectedRows[0].Index;
+                int id = 0;
+                bool converted = Int32.TryParse(dataGridView1[0, index].Value.ToString(), out id);
+                if (converted == false)
+                    return;
+
+                using (var context = new MyDbContext())
+                {
+                    Cocktail cocktail = context.Cocktail.Find(id);
+                    Ingridient.DataSource = cocktail.Ingredient.ToList();
+                    Ingridient.DisplayMember = "Name";
                 }
             }
         }
