@@ -62,11 +62,11 @@
     <Compile Include="AddIngredientForm.Designer.cs">
       <DependentUpon>AddIngredientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddCoctailForm.cs">
+    <Compile Include="AddCocktailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddCoctailForm.Designer.cs">
-      <DependentUpon>AddCoctailForm.cs</DependentUpon>
+    <Compile Include="AddCocktailForm.Designer.cs">
+      <DependentUpon>AddCocktailForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -83,19 +83,19 @@
     </Compile>
     <Compile Include="MyDbContext.cs" />
     <Compile Include="Cocktail.cs" />
-    <Compile Include="CoctailForm.cs">
+    <Compile Include="СocktailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CoctailForm.Designer.cs">
-      <DependentUpon>CoctailForm.cs</DependentUpon>
+    <Compile Include="СocktailForm.Designer.cs">
+      <DependentUpon>СocktailForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AddIngredientForm.resx">
       <DependentUpon>AddIngredientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddCoctailForm.resx">
-      <DependentUpon>AddCoctailForm.cs</DependentUpon>
+    <EmbeddedResource Include="AddCocktailForm.resx">
+      <DependentUpon>AddCocktailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -103,8 +103,8 @@
     <EmbeddedResource Include="IngredientForm.resx">
       <DependentUpon>IngredientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CoctailForm.resx">
-      <DependentUpon>CoctailForm.cs</DependentUpon>
+    <EmbeddedResource Include="СocktailForm.resx">
+      <DependentUpon>СocktailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
