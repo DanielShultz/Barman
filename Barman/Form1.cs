@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Tourism
+namespace Barman
 {
     public partial class Form1 : Form
     {
@@ -10,21 +10,15 @@ namespace Tourism
             InitializeComponent();
         }
 
-        private void ToTours_Click(object sender, EventArgs e)
+        private void ToIngridient_Click(object sender, EventArgs e)
         {
-            ToursForm hform = new ToursForm();
+            IngredientForm hform = new IngredientForm();
             DialogResult result = hform.ShowDialog(this);
         }
 
-        private void ToClients_Click(object sender, EventArgs e)
+        private void ToCoctail_Click(object sender, EventArgs e)
         {
-            ClientsForm cform = new ClientsForm();
-            DialogResult result = cform.ShowDialog(this);
-        }
-
-        private void ToOrders_Click(object sender, EventArgs e)
-        {
-            OrdersForm oform = new OrdersForm();
+            CoctailForm oform = new CoctailForm();
             DialogResult result = oform.ShowDialog(this);
         }
     }

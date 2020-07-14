@@ -2,18 +2,18 @@
 using System.Data.Entity;
 using System.Windows.Forms;
 
-namespace Tourism
+namespace Barman
 {
-    public partial class ToursForm : Form
+    public partial class IngredientForm : Form
     {
-        public ToursForm()
+        public IngredientForm()
         {
             InitializeComponent();
 
             using (var context = new MyDbContext())
             {
-                context.Tours.Load();
-                dataGridView1.DataSource = context.Tours.Local.ToBindingList();
+                context.Ingredient.Load();
+                dataGridView1.DataSource = context.Ingredient.Local.ToBindingList();
             };
         }
 
@@ -28,36 +28,36 @@ namespace Tourism
                     return;
                 using (var context = new MyDbContext())
                 {
-                    Tour tour = context.Tours.Find(id);
-                    context.Tours.Remove(tour);
+                    Ingredient ingredient = context.Ingredient.Find(id);
+                    context.Ingredient.Remove(ingredient);
+
                     context.SaveChanges();
-                    context.Tours.Load();
-                    dataGridView1.DataSource = context.Tours.Local.ToBindingList();
+                    context.Ingredient.Load();
+                    dataGridView1.DataSource = context.Ingredient.Local.ToBindingList();
                 }
             };
         }
 
         private void Add_Click(object sender, EventArgs e)
         {
-            AddTourForm ahForm = new AddTourForm();
-            DialogResult result = ahForm.ShowDialog(this);
+            AddIngredientForm aiForm = new AddIngredientForm();
+            DialogResult result = aiForm.ShowDialog(this);
 
             if (result == DialogResult.Cancel)
                 return;
 
-            var tour = new Tour
+            var ingredient = new Ingredient
             {
-                Country = ahForm.CountryTour.Text,
-                Price = (int)ahForm.PriceTour.Value
+                Name = aiForm.Ingredient.Text,
             };
 
             using (var context = new MyDbContext())
             {
-                context.Tours.Add(tour);
+                context.Ingredient.Add(ingredient);
                 context.SaveChanges();
 
-                context.Tours.Load();
-                dataGridView1.DataSource = context.Tours.Local.ToBindingList();
+                context.Ingredient.Load();
+                dataGridView1.DataSource = context.Ingredient.Local.ToBindingList();
             }
         }
 
@@ -73,24 +73,22 @@ namespace Tourism
 
                 using (var context = new MyDbContext())
                 {
-                    Tour tour = context.Tours.Find(id);
+                    Ingredient ingredient = context.Ingredient.Find(id);
 
-                    AddTourForm ahForm = new AddTourForm();
-                    ahForm.CountryTour.Text = tour.Country;
-                    ahForm.PriceTour.Value = tour.Price;
+                    AddIngredientForm aiForm = new AddIngredientForm();
+                    aiForm.Ingredient.Text = ingredient.Name;
 
-                    DialogResult result = ahForm.ShowDialog(this);
+                    DialogResult result = aiForm.ShowDialog(this);
                     if (result == DialogResult.Cancel)
                         return;
 
-                    tour.Country = ahForm.CountryTour.Text;
-                    tour.Price = (int)ahForm.PriceTour.Value;
+                    ingredient.Name = aiForm.Ingredient.Text;
 
-                    context.Entry(tour).State = EntityState.Modified;
+                    context.Entry(ingredient).State = EntityState.Modified;
                     context.SaveChanges();
 
-                    context.Tours.Load();
-                    dataGridView1.DataSource = context.Tours.Local.ToBindingList();
+                    context.Ingredient.Load();
+                    dataGridView1.DataSource = context.Ingredient.Local.ToBindingList();
                 }
             }
         }

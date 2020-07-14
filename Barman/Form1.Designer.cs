@@ -1,4 +1,4 @@
-﻿namespace Tourism
+﻿namespace Barman
 {
     partial class Form1
     {
@@ -29,57 +29,41 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.ToTours = new System.Windows.Forms.Button();
-            this.ToClients = new System.Windows.Forms.Button();
-            this.ToOrders = new System.Windows.Forms.Button();
+            this.ToIngridient = new System.Windows.Forms.Button();
+            this.ToCoctail = new System.Windows.Forms.Button();
             this.clientBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // ToTours
+            // ToIngridient
             // 
-            this.ToTours.Location = new System.Drawing.Point(12, 9);
-            this.ToTours.Name = "ToTours";
-            this.ToTours.Size = new System.Drawing.Size(149, 23);
-            this.ToTours.TabIndex = 12;
-            this.ToTours.Text = "Туры";
-            this.ToTours.UseVisualStyleBackColor = true;
-            this.ToTours.Click += new System.EventHandler(this.ToTours_Click);
+            this.ToIngridient.Location = new System.Drawing.Point(12, 9);
+            this.ToIngridient.Name = "ToIngridient";
+            this.ToIngridient.Size = new System.Drawing.Size(149, 23);
+            this.ToIngridient.TabIndex = 12;
+            this.ToIngridient.Text = "Ингридиенты";
+            this.ToIngridient.UseVisualStyleBackColor = true;
+            this.ToIngridient.Click += new System.EventHandler(this.ToIngridient_Click);
             // 
-            // ToClients
+            // ToCoctail
             // 
-            this.ToClients.Location = new System.Drawing.Point(12, 38);
-            this.ToClients.Name = "ToClients";
-            this.ToClients.Size = new System.Drawing.Size(149, 23);
-            this.ToClients.TabIndex = 13;
-            this.ToClients.Text = "Клиенты";
-            this.ToClients.UseVisualStyleBackColor = true;
-            this.ToClients.Click += new System.EventHandler(this.ToClients_Click);
-            // 
-            // ToOrders
-            // 
-            this.ToOrders.Location = new System.Drawing.Point(12, 67);
-            this.ToOrders.Name = "ToOrders";
-            this.ToOrders.Size = new System.Drawing.Size(149, 23);
-            this.ToOrders.TabIndex = 14;
-            this.ToOrders.Text = "Продажи";
-            this.ToOrders.UseVisualStyleBackColor = true;
-            this.ToOrders.Click += new System.EventHandler(this.ToOrders_Click);
-            // 
-            // clientBindingSource
-            // 
-            this.clientBindingSource.DataSource = typeof(Tourism.Client);
+            this.ToCoctail.Location = new System.Drawing.Point(12, 38);
+            this.ToCoctail.Name = "ToCoctail";
+            this.ToCoctail.Size = new System.Drawing.Size(149, 23);
+            this.ToCoctail.TabIndex = 14;
+            this.ToCoctail.Text = "Коктейли";
+            this.ToCoctail.UseVisualStyleBackColor = true;
+            this.ToCoctail.Click += new System.EventHandler(this.ToCoctail_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(176, 99);
-            this.Controls.Add(this.ToOrders);
-            this.Controls.Add(this.ToClients);
-            this.Controls.Add(this.ToTours);
+            this.ClientSize = new System.Drawing.Size(176, 70);
+            this.Controls.Add(this.ToCoctail);
+            this.Controls.Add(this.ToIngridient);
             this.Name = "Form1";
-            this.Text = "Туризм";
+            this.Text = "Бармен";
             ((System.ComponentModel.ISupportInitialize)(this.clientBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -87,9 +71,8 @@
 
         #endregion
         private System.Windows.Forms.BindingSource clientBindingSource;
-        private System.Windows.Forms.Button ToTours;
-        private System.Windows.Forms.Button ToClients;
-        private System.Windows.Forms.Button ToOrders;
+        private System.Windows.Forms.Button ToIngridient;
+        private System.Windows.Forms.Button ToCoctail;
     }
 }
 

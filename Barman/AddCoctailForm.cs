@@ -1,10 +1,10 @@
 ﻿using System.Windows.Forms;
 
-namespace Tourism
+namespace Barman
 {
-    public partial class AddClientForm : Form
+    public partial class AddCoctailForm : Form
     {
-        public AddClientForm()
+        public AddCoctailForm()
         {
             InitializeComponent();
         }

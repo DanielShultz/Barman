@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Tourism
+namespace Barman
 {
     static class Program
     {

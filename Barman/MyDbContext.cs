@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Tourism
+namespace Barman
 {
     public class MyDbContext : DbContext
     {
@@ -8,8 +8,7 @@ namespace Tourism
         {
         }
 
-        public DbSet<Tour> Tours { get; set; }
-        public DbSet<Client> Clients { get; set; }
-        public DbSet<Order> Orders { get; set; }
+        public DbSet<Ingredient> Ingredient { get; set; }
+        public DbSet<Cocktail> Cocktail { get; set; }
     }
 }

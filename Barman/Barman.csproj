@@ -56,30 +56,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddClientForm.cs">
+    <Compile Include="AddIngredientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddClientForm.Designer.cs">
-      <DependentUpon>AddClientForm.cs</DependentUpon>
+    <Compile Include="AddIngredientForm.Designer.cs">
+      <DependentUpon>AddIngredientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddTourForm.cs">
+    <Compile Include="AddCoctailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddTourForm.Designer.cs">
-      <DependentUpon>AddTourForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="AddOrderForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddOrderForm.Designer.cs">
-      <DependentUpon>AddOrderForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Client.cs" />
-    <Compile Include="ClientsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientsForm.Designer.cs">
-      <DependentUpon>ClientsForm.cs</DependentUpon>
+    <Compile Include="AddCoctailForm.Designer.cs">
+      <DependentUpon>AddCoctailForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -87,43 +74,37 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tour.cs" />
-    <Compile Include="ToursForm.cs">
+    <Compile Include="Ingredient.cs" />
+    <Compile Include="IngredientForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ToursForm.Designer.cs">
-      <DependentUpon>ToursForm.cs</DependentUpon>
+    <Compile Include="IngredientForm.Designer.cs">
+      <DependentUpon>IngredientForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MyDbContext.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="OrdersForm.cs">
+    <Compile Include="Cocktail.cs" />
+    <Compile Include="CoctailForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrdersForm.Designer.cs">
-      <DependentUpon>OrdersForm.cs</DependentUpon>
+    <Compile Include="CoctailForm.Designer.cs">
+      <DependentUpon>CoctailForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddClientForm.resx">
-      <DependentUpon>AddClientForm.cs</DependentUpon>
+    <EmbeddedResource Include="AddIngredientForm.resx">
+      <DependentUpon>AddIngredientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddTourForm.resx">
-      <DependentUpon>AddTourForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddOrderForm.resx">
-      <DependentUpon>AddOrderForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClientsForm.resx">
-      <DependentUpon>ClientsForm.cs</DependentUpon>
+    <EmbeddedResource Include="AddCoctailForm.resx">
+      <DependentUpon>AddCoctailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ToursForm.resx">
-      <DependentUpon>ToursForm.cs</DependentUpon>
+    <EmbeddedResource Include="IngredientForm.resx">
+      <DependentUpon>IngredientForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrdersForm.resx">
-      <DependentUpon>OrdersForm.cs</DependentUpon>
+    <EmbeddedResource Include="CoctailForm.resx">
+      <DependentUpon>CoctailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -135,8 +116,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Barman.Cocktail.datasource" />
+    <None Include="Properties\DataSources\Barman.Ingredient.datasource" />
     <None Include="Properties\DataSources\Client.datasource" />
     <None Include="Properties\DataSources\Order.datasource" />
     <None Include="Properties\DataSources\Tour.datasource" />
