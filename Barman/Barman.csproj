@@ -7,8 +7,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{26079977-B58C-4A07-8185-BFFBAC671FD6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Tourism</RootNamespace>
-    <AssemblyName>Tourism</AssemblyName>
+    <RootNamespace>Barman</RootNamespace>
+    <AssemblyName>Barman</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
